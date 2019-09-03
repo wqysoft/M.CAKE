@@ -1,0 +1,113 @@
+/*   导航栏样式 */
+nav ul li{
+    float:right;
+    list-style-type: none;
+    display: inline;
+    margin:5px 10px;
+    color:#b99c7b;
+}
+nav{
+    padding-right:200px;
+    height: 20px;
+}
+header{
+    border-bottom: 1px solid #eee;
+    box-shadow: 3px 3px 4px 0 #ddd;
+}
+header div{
+    float:left;
+}
+header div img{
+    margin-left: 10px;
+}
+header .header_right{
+    padding: 20px 50px;
+    border-top: 1px solid #eaeaea;
+}
+header .header_right .header_list{
+    color: #9b9b9b;
+    width: 150px;
+    border-right: 1px solid #eaeaea;
+    text-align: center;
+}
+header .header_right div:nth-child(4){
+    border: 0px;
+}
+header .header_right div.location{
+    width: 200px;
+    margin-left: 40px;
+}
+header .header_right div.location p{
+    color:#888;
+    text-align: right;
+}
+header .header_right div.location .location_left p:first-child
+, header .header_right div.location .location_right p{
+    color:#888;
+}
+header .header_right div.location .location_left p:last-child{
+    color:#b09169;
+}
+header .header_right div.location .location_right p{
+    line-height: 40px;
+    margin-left:30px;
+    vertical-align: center;
+}
+/*  详情样式 */
+.detail{
+    margin: 20px 150px;
+}
+/*.detail .detail_left p{*/
+/*    font-size: 20px;*/
+/*    color: #b09169;*/
+/*    text-align: center;*/
+/*}*/
+.detail .detail_left img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #b09169;
+}
+.detail .detail_left,.detail .detail_center,.detail .detail_right{
+    float: left;
+}
+.detail .detail_center{
+    margin: 0 20px 0 10px;
+    width: 482px;
+}
+.detail .detail_center p{
+    color: #666;
+    line-height: 30px;
+}
+.detail .detail_right p.p_one{
+    font-size: 25px;
+    color: #757575;
+}
+.detail .detail_right p.p_two{
+    line-height: 40px;
+    color: #888;
+    margin-left: 10px;
+}
+.detail .detail_right .detail_right_rec{
+    width: 340px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.detail .detail_right p.price{
+    color: #b99c7b;
+    font-size: 40px;
+    line-height: 100px;
+}
+.detail .detail_right .weight p{
+    font-size: 16px;
+    color: #666;
+    float: left;
+    padding:5px 10px 0;
+    background-color: #f2f6f7;
+    margin: 0 8px;
+}
+.detail .detail_right .introduce{
+    margin: 10px 0;
+    color: #ccc;
+    line-height: 30px;
+}
+
