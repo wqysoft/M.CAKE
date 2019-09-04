@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="public.css">
     <link rel="stylesheet" href="foods.css">
     <title>食品网页</title>
+    <script src="jQuery.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
 <nav>
@@ -46,13 +48,12 @@
 </header>
 <div class="detail clearFloat">
     <div class="detail_left">
-<!--        <p>^</p>-->
         <div><img src="image/shop_goods-1.jpg" alt=""></div>
         <div><img src="image/shop_goods-2.jpg" alt=""></div>
         <div><img src="image/shop_goods-4.jpg" alt=""></div>
     </div>
     <div class="detail_center">
-        <img src="image/shop_goods.png" alt="">
+        <img src="image/shop_goods.png" alt="美味蛋糕">
         <p>En ce moment,Le fromage et la creme massent vos papilles,Laissez ta langue se dominer,retour a ton enfance</p>
         <p>这一刻，奶油芝士的细腻与淡奶油的绵软嵌入味蕾，让舌尖主宰，重返童年时光。</p>
     </div>
@@ -71,8 +72,132 @@
             <div class="introduce">
                 <p>4-7人食  21cm*5.5cm<br/>提前5小时预定</p>
             </div>
+            <div class="number">
+                <p class="desc">数量</p>
+                <p class="reduce">-</p>
+                <p class="num">1</p>
+                <p class="plus">+</p>
+            </div>
+            <div class="exchange">
+                <div class="exch">换购</div>
+                <div class="rec"></div>
+                <div class="text"><span>+29.9</span>元换购缤纷欢乐礼包包含帽子1套(共5个)，插旗1套，防水包装袋1个</div>
+                <div class="img"><img src="image/shop_goods-desc.jpg" alt=""></div>
+            </div>
+            <div class="btn">
+                <button>加入购物车</button>
+                <button>立即购买</button>
+            </div>
+        </div>
+        <div class="commit">
+            <div class="co_list clearFloat">
+                <div>
+                    <p>Best Ingredient</p>
+                    <p>优质原材料</p>
+                </div>
+                <div>
+                    <p>Evaluation</p>
+                    <p>累计点评(<span>1279</span>)</p>
+                </div>
+            </div>
+            <div class="co_location clearFloat">
+                <div class="floatLeft"><img src="image/flag_France.jpg" alt="国旗">法国奶油</div>
+                <div class="floatLeft"><img src="image/flag_China.jpg" alt="国旗">甄选酸乳</div>
+                <div class="floatLeft"><img src="image/flag_NewZealand.jpg" alt="国旗">新西兰芝士</div>
+                <div class="floatLeft"><img src="image/flag_rabbit.jpg" alt="国旗">胡萝卜粒</div>
+            </div>
+            <div class="co_sweet">
+                <div><p>Texture 口感 </p><p>绵软细腻</p></div>
+                <div><p>Base 口味基底</p><p>Whipping Cream</p></div>
+                <div><p>Sweetness 甜味</p><p>🍭🍭</p></div>
+                <div><p>Flavor 口味</p><p>芝士/奶油/酸乳</p></div>
+            </div>
         </div>
     </div>
 </div>
+<!--中间线部分-->
+<hr/>
+<div class="centerline">
+<div id="line">
+    <div class="line_img floatLeft">
+        <img src="image/remember.jpg" alt=""></div>
+    <div class="line floatLeft">
+        <p>Avec une bouchee,vous entrerez dans le monde du Magicien d'Oz,Lapin detendu vous emmenera un aventure,vous accompagne de retrouver I'innocence perdue.</p>
+        <p>咬下一口，进入绿野仙踪的童话世界。安逸兔带你开启奇幻冒险之旅，陪你找到被遗失的童心。</p>
+    </div>
+</div>
+    <div class="centerBottom">
+<!--图片部分-->
+    <div class="center_img">
+        <img src="image/shop_goods_1.png" alt="">
+    </div>
+<!--咬下一口进入-->
+<div id="eat" class="clearFloat">
+<div class="eat_left">
+    <div class="eat_one"><p >咬下一口，进入绿野仙踪的童话世界。安逸兔带你开启奇幻冒险之旅，陪你找到被遗失的童心。</p></div>
+    <div class="eat_two"><p>Best Ingredient | 优质原材料</p>
+               <p>法国奶油、甄选酸乳、新西兰芝士、胡萝卜粒</p></div>
+    <div class="eat_three">
+        <div><p>Texture | 口感</p><p>绵软细腻</p></div>
+        <div><p>Flavor | 口味</p><p>芝士、奶油、酸乳</p></div>
+        <div><p>Base | 口味基底</p><p>奶油</p></div>
+        <div><p>Sweetness | 甜味</p><p>🍭🍭</p></div>
+        <div><p>Size | 规格</p><p>1.5磅/2.5磅/3.5磅/5.5磅</p></div>
+    </div>
+</div>
+<div class="eat_right"><img src="image/shop_goods-111.jpg" alt=""></div>
+</div>
+<!--        中间漫画部分-->
+        <div id="eat_Cartoon"><img src="image/shop_goods_Cartoon.jpg" alt=""></div>
+        <div id="eat_taste"><img src="image/shop_goods-taste.jpg" alt=""></div>
+
+
+<!--蛋糕规格-->
+<div id="size">
+    <div class="cake"><p>蛋糕规格</p></div>
+    <div class="clearFloat">
+        <div >
+            <div><img src="image/size_1.jpg" alt=""></div>
+            <div><p>1.5磅</p>
+                <p>SIZE:16cm*5cm</p>
+                <p>适合2-3人食用</p></div></div>
+        <div>
+            <div><img src="image/size_2.jpg" alt=""></div>
+            <div><p>2.5磅</p>
+                <p>SIZE:21cm*5cm</p>
+                <p>适合4-7人食用</p></div></div>
+        <div>
+            <div><img src="image/size_3.jpg" alt=""></div>
+            <div><p>3.5磅</p>
+                <p>SIZE:26.5cm*5cm</p>
+                <p>适合8-12人食用</p></div></div>
+        <div>
+            <div><img src="image/size_4.jpg" alt=""></div>
+            <div><p>5.5磅</p>
+                <p>SIZE:32.5cm*5cm</p>
+                <p>适合12-20人食用</p></div></div>
+    </div>
+</div>
+</div>
+</div>
+<!--销量排行榜-->
+<div id="SalesVolume">
+    <div class="SABLE"><p>INDISPENSABLE</p>
+        <p>销量排行榜</p></div>
+    <div class="clearFloat">
+        <div><img src="image/shop_goods-1.jpg" alt=""><p>Velour rouge</p><p>2磅/298RMB</p></div>
+        <div><img src="image/shop_goods-2.jpg" alt=""><p>lapin detendu</p><p>2.5磅/318RMB</p></div>
+        <div><img src="image/shop_goods-3.jpg" alt=""><p>Voyage de Daisy</p><p>2.5磅/318RMB</p></div>
+        <div><img src="image/shop_goods-4.jpg" alt=""><p>semi-fermente original</p><p>1盒/48RMB</p></div>
+        <div><img src="image/shop_goods-5.jpg" alt=""><p>Croissant francais</p><p>1盒/48RMB</p></div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="footer">
+    <div><img src="image/shop_goods-11.jpg" alt=""></div>
+    <div><img src="image/shop_goods-12.jpg" alt=""></div>
+    <div><img src="image/shop_goods-13.jpg" alt=""></div>
+    </div>
+</footer>
 </body>
 </html>

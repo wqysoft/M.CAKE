@@ -55,13 +55,8 @@ header .header_right div.location .location_right p{
 }
 /*  详情样式 */
 .detail{
-    margin: 20px 150px;
+    margin: 20px 100px;
 }
-/*.detail .detail_left p{*/
-/*    font-size: 20px;*/
-/*    color: #b09169;*/
-/*    text-align: center;*/
-/*}*/
 .detail .detail_left img{
     width: 100px;
     height: 100px;
@@ -75,7 +70,7 @@ header .header_right div.location .location_right p{
     width: 482px;
 }
 .detail .detail_center p{
-    color: #666;
+    color: #999;
     line-height: 30px;
 }
 .detail .detail_right p.p_one{
@@ -88,26 +83,255 @@ header .header_right div.location .location_right p{
     margin-left: 10px;
 }
 .detail .detail_right .detail_right_rec{
-    width: 340px;
+    width: 349px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
 }
 .detail .detail_right p.price{
     color: #b99c7b;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 100px;
 }
 .detail .detail_right .weight p{
     font-size: 16px;
     color: #666;
     float: left;
-    padding:5px 10px 0;
+    padding:5px 10px;
     background-color: #f2f6f7;
-    margin: 0 8px;
+    margin-right: 16px;
 }
 .detail .detail_right .introduce{
     margin: 10px 0;
     color: #ccc;
     line-height: 30px;
 }
+.detail .detail_right .number{
+    margin: 25px 0;
+    height: 30px;
+}
+.detail .detail_right .number p{
+    float: left;
+    margin: 0 10px;
+}
+.detail .detail_right .number p.desc{
+    color: #666;
+    margin: 5px;
+}
+.detail .detail_right .number p.reduce,.detail .detail_right .number p.plus{
+    width: 20px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #f2f6f7;
+    padding: 0 10px;
+}
+.detail .detail_right .number p.num{
+    line-height: 33px;
+}
+.detail .detail_right .exchange{
+    height: 90px;
+}
+.detail .detail_right .exchange div{
+    float: left;
+}
+.detail .detail_right .exchange div.text{
+    width: 180px;
+    margin: 0 10px;
+}
+.detail .detail_right .exchange div.exch{
+    margin-right: 20px;
+    color: #fff;
+    background-color: #a51f2e;
+    padding: 2px 6px;
+}
+.detail .detail_right .exchange div.rec{
+    margin-top:2px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #a51f2e;
+}
+.detail .detail_right .btn button{
+    width: 172px;
+    height: 42px;
+    color: #fff;
+    background-color: #b09169;
+    border: 0;
+    border-radius: 3px;
+}
+/*优质原材料*/
+.detail .detail_right  .commit {
+    margin-top: 30px;
+}
+.detail .detail_right  .commit .co_list div{
+    color: #999;
+    float: left;
+    padding-bottom:15px;
+    margin-right: 30px;
+    text-align: center;
+    border-bottom: 2.5px solid #7b9196;
+}
+.detail .detail_right  .commit .co_list div:last-child{
+    border-bottom: 3px solid #d9e8eb;
+}
+.detail .detail_right  .commit .co_location{
+    margin: 15px 0 10px 0;
+}
+.detail .detail_right  .commit .co_location div{
+    margin-right: 15px;
+}
+.detail .detail_right  .commit .co_location img{
+    height: 12px;
+}
+.detail .detail_right  .commit .co_sweet div{
+    width:349px;
+    line-height: 25px;
+}
+.detail .detail_right  .commit .co_sweet div p:first-child{
+    color: #999;
+    margin-right: 20px;
+    float: left;
+}
+.detail .detail_right  .commit .co_sweet div p:last-child{
+    color: #b09169;
+}
+/*中间线部分*/
+#line{
+    width: 620px;
+    height: 120px;
+    margin:30px auto;
+    background-color: #fff;
+}
 
+#line .line{
+    width: 500px;
+    margin-left: 20px;
+}
+#line .line p{
+    color: #b09169;
+}
+.centerBottom{
+    width: 1000px;
+    margin:0 auto;
+    background-color: #fafafa;
+}
+/*咬下一口*/
+#eat{
+    width: 1000px;
+    margin: 30px auto;
+}
+#eat .eat_left{
+    width: 500px;
+    margin:0 50px;
+}
+#eat .eat_left,#eat .eat_right{
+    float: left;
+}
+#eat img{
+    width: 400px;
+}
+#eat_Cartoon{
+    width: 500px;
+    margin: 0 auto;
+}
+#eat_Cartoon img{
+    width: 500px;
+}
+#eat .eat_one{
+    color: #666;
+    margin: 20px 0;
+}
+#eat .eat_two p:first-child{
+    color: #b99c7b;
+    padding: 20px 0;
+    border-top: 1px solid #b99c7b;
+    width: 400px;
+}
+#eat .eat_two p:last-child{
+    color: #666;
+    margin-bottom: 10px;
+}
+#eat .eat_three div{
+    width: 300px;
+}
+#eat .eat_three div p{
+    float: left;
+    line-height: 30px;
+}
+#eat .eat_three div p:first-child{
+    color: #b99c7b;
+    margin-right: 30px;
+}
+#eat .eat_three div p:last-child{
+    color: #666;
+}
+#eat_taste img{
+    width: 1000px;
+    margin:40px 0;
+}
+#size{
+    padding-bottom: 50px;
+}
+#size .cake p{
+    font-size: 30px;
+    color: #b09169;
+    line-height: 30px;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #b09169;
+}
+#size .floatLeft img{
+    width: 200px;
+}
+
+#size .clearFloat div{
+    width: 240px;
+    float: left;
+    text-align: center;
+}
+/*销量排行榜*/
+#SalesVolume{
+    width: 1000px;
+    margin: 30px auto;
+}
+#SalesVolume p{
+    text-align: center;
+}
+#SalesVolume .SABLE{
+    border-bottom: 1px solid #cccccc;
+    padding: 20px;
+    margin: 10px;
+}
+#SalesVolume div:last-child div{
+    float: left;
+    width: 190px;
+    margin: 5px;
+    text-align: center;
+    color: #999;
+}
+#SalesVolume img{
+     width: 180px;
+ }
+ /*底部footer*/
+#footer{
+    width: 100%;
+    height: 500px;
+    background-color: #f2f6f7;
+    margin-top: 20px;
+}
+#footer .footer{
+    width: 1000px;
+    margin: 0 auto;
+}
+#footer .footer div{
+    width: 300px;
+    float: left;
+    margin: 15px;
+}
+#footer .footer div img{
+    width: 300px;
+}
+     /*js中的css*/
+addClass{
+    border:1px solid #b09169;
+    cursor:pointer;
+}
