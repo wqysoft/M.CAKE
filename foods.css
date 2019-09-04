@@ -21,7 +21,7 @@ header div img{
     margin-left: 10px;
 }
 header .header_right{
-    padding: 20px 50px;
+    padding: 20px;
     border-top: 1px solid #eaeaea;
 }
 header .header_right .header_list{
@@ -30,12 +30,16 @@ header .header_right .header_list{
     border-right: 1px solid #eaeaea;
     text-align: center;
 }
+header .header_right .header_list:hover{
+    color: #b09169;
+    cursor: pointer;
+}
 header .header_right div:nth-child(4){
     border: 0px;
 }
 header .header_right div.location{
-    width: 200px;
-    margin-left: 40px;
+    width: 280px;
+    margin-left: 30px;
 }
 header .header_right div.location p{
     color:#888;
@@ -103,13 +107,32 @@ header .header_right div.location .location_right p{
 }
 .detail .detail_right .introduce{
     margin: 10px 0;
-    color: #ccc;
+    color: #666;
     line-height: 30px;
 }
 .detail .detail_right .number{
     margin: 25px 0;
     height: 30px;
 }
+.detail .detail_right .number input{
+    width: 40px;
+    height: 28px;
+    margin: 0 5px;
+    text-align: center;
+    font-size: 18px;
+    float: left;
+    outline: none;
+    border: 0;
+}
+/*去除输入框上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+/*去除输入框箭头*/
 .detail .detail_right .number p{
     float: left;
     margin: 0 10px;
@@ -118,15 +141,16 @@ header .header_right div.location .location_right p{
     color: #666;
     margin: 5px;
 }
-.detail .detail_right .number p.reduce,.detail .detail_right .number p.plus{
-    width: 20px;
+.detail .detail_right .number .reduce,.detail .detail_right .number .plus{
+    width: 50px;
+    height: 30px;
+    float: left;
+    outline: none;
     font-size: 25px;
     text-align: center;
     background-color: #f2f6f7;
     padding: 0 10px;
-}
-.detail .detail_right .number p.num{
-    line-height: 33px;
+    border: 0;
 }
 .detail .detail_right .exchange{
     height: 90px;
@@ -144,7 +168,7 @@ header .header_right div.location .location_right p{
     background-color: #a51f2e;
     padding: 2px 6px;
 }
-.detail .detail_right .exchange div.rec{
+.detail .detail_right .exchange div.rec input{
     margin-top:2px;
     width: 20px;
     height: 20px;
@@ -153,6 +177,7 @@ header .header_right div.location .location_right p{
 .detail .detail_right .btn button{
     width: 172px;
     height: 42px;
+    outline: none;
     color: #fff;
     background-color: #b09169;
     border: 0;
@@ -287,6 +312,7 @@ header .header_right div.location .location_right p{
     width: 240px;
     float: left;
     text-align: center;
+    color: #666;
 }
 /*销量排行榜*/
 #SalesVolume{
@@ -295,6 +321,7 @@ header .header_right div.location .location_right p{
 }
 #SalesVolume p{
     text-align: center;
+    color: #666;
 }
 #SalesVolume .SABLE{
     border-bottom: 1px solid #cccccc;
@@ -314,24 +341,21 @@ header .header_right div.location .location_right p{
  /*底部footer*/
 #footer{
     width: 100%;
-    height: 500px;
+    height: 250px;
     background-color: #f2f6f7;
     margin-top: 20px;
 }
 #footer .footer{
     width: 1000px;
+    height: 250px;
     margin: 0 auto;
 }
 #footer .footer div{
     width: 300px;
     float: left;
-    margin: 15px;
+    margin: 16.67px;
 }
 #footer .footer div img{
     width: 300px;
 }
-     /*js中的css*/
-addClass{
-    border:1px solid #b09169;
-    cursor:pointer;
-}
+

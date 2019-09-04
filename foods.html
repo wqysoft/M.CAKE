@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="public.css">
     <link rel="stylesheet" href="foods.css">
-    <title>食品网页</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1386107_7zy0pmrzk15.css">
     <script src="jQuery.js"></script>
     <script src="main.js"></script>
+    <title>食品网页</title>
 </head>
 <body>
 <nav>
     <ul>
         <li>SIGN IN注册</li>
         <li>LOG IN登录</li>
-        <li>0件</li>
+        <li><span  class="iconfont icon-lanzi"></span> <span>0</span> 件</li>
     </ul>
 </nav>
 <header class="clearFloat">
@@ -38,10 +39,10 @@
         <div class="location">
             <div class="location_left">
                 <p>4006-678--678</p>
-                <p>配送范围查询</p>
+                <p><span class="iconfont icon-icon_distribution"></span>配送范围查询</p>
             </div>
             <div class="location_right">
-               <p>上海市</p>
+               <p><span class="iconfont icon-dingwei"></span>上海市</p>
             </div>
         </div>
     </div>
@@ -74,13 +75,13 @@
             </div>
             <div class="number">
                 <p class="desc">数量</p>
-                <p class="reduce">-</p>
-                <p class="num">1</p>
-                <p class="plus">+</p>
+                <button class="reduce">-</button>
+                <input type="number"  value="1" class="num"/>
+                <button class="plus">+</button>
             </div>
             <div class="exchange">
                 <div class="exch">换购</div>
-                <div class="rec"></div>
+                <div class="rec"><input type="checkbox"></div>
                 <div class="text"><span>+29.9</span>元换购缤纷欢乐礼包包含帽子1套(共5个)，插旗1套，防水包装袋1个</div>
                 <div class="img"><img src="image/shop_goods-desc.jpg" alt=""></div>
             </div>
@@ -156,7 +157,7 @@
 <div id="size">
     <div class="cake"><p>蛋糕规格</p></div>
     <div class="clearFloat">
-        <div >
+        <div>
             <div><img src="image/size_1.jpg" alt=""></div>
             <div><p>1.5磅</p>
                 <p>SIZE:16cm*5cm</p>
