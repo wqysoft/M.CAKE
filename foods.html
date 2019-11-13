@@ -5,11 +5,13 @@
     <link rel="stylesheet" href="public.css">
     <link rel="stylesheet" href="foods.css">
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1386107_7zy0pmrzk15.css">
+    <script src="vue.js"></script>
     <script src="jQuery.js"></script>
     <script src="main.js"></script>
     <title>食品网页</title>
 </head>
 <body>
+<div  id="app">
 <nav>
     <ul>
         <li>SIGN IN注册</li>
@@ -20,21 +22,9 @@
 <header class="clearFloat">
     <div><img src="image/logo.png" alt="logo"></div>
     <div class="header_right">
-        <div class="header_list">
-            <p>Nos Products</p>
-            <p>全部产品</p>
-        </div>
-        <div class="header_list">
-            <p>Napoleon</p>
-            <p>拿破仑产品</p>
-        </div>
-        <div class="header_list">
-            <p>Evenements</p>
-            <p>热门活动</p>
-        </div>
-        <div class="header_list">
-            <p>Mon M'CAKE</p>
-            <p>会员中心</p>
+        <div class="header_list" v-for="item in navTitles"><!--开始用vue-->
+            <p>{{item.pTitleEnglish}}</p>
+            <p>{{item.pTitleChinese}}</p>
         </div>
         <div class="location">
             <div class="location_left">
@@ -48,10 +38,10 @@
     </div>
 </header>
 <div class="detail clearFloat">
-    <div class="detail_left">
-        <div><img src="image/shop_goods-1.jpg" alt=""></div>
-        <div><img src="image/shop_goods-2.jpg" alt=""></div>
-        <div><img src="image/shop_goods-4.jpg" alt=""></div>
+    <div class="clearFloat detail_left_all">
+    <div class="detail_left" v-for="item in centerImgs">
+        <img :src=item.src alt="">
+    </div>
     </div>
     <div class="detail_center">
         <img src="image/shop_goods.png" alt="美味蛋糕">
@@ -62,13 +52,12 @@
         <div class="clearFloat">
         <p class="floatLeft p_one">lapin  detendu</p><p class="floatLeft p_two">安逸兔</p>
         </div>
-        <div class="detail_right_rec clearFloat">
+        <div class="detail_right_rec">
             <p class="price">￥318.00</p>
-            <div class="weight clearFloat">
-                <p>1.5磅</p>
-                <p>2.5磅</p>
-                <p>3.5磅</p>
-                <p>5.5磅</p>
+            <div class="clearFloat">
+            <div class="weight clearFloat" v-for="item in pounds"><!--开始用vue-->
+                <p>{{item.weight}}</p>
+            </div>
             </div>
             <div class="introduce">
                 <p>4-7人食  21cm*5.5cm<br/>提前5小时预定</p>
@@ -101,17 +90,11 @@
                     <p>累计点评(<span>1279</span>)</p>
                 </div>
             </div>
-            <div class="co_location clearFloat">
-                <div class="floatLeft"><img src="image/flag_France.jpg" alt="国旗">法国奶油</div>
-                <div class="floatLeft"><img src="image/flag_China.jpg" alt="国旗">甄选酸乳</div>
-                <div class="floatLeft"><img src="image/flag_NewZealand.jpg" alt="国旗">新西兰芝士</div>
-                <div class="floatLeft"><img src="image/flag_rabbit.jpg" alt="国旗">胡萝卜粒</div>
+            <div class="co_location clearFloat floatLeft" v-for="item in flags">
+               <img :src=item.src alt="国旗">{{item.name}}
             </div>
-            <div class="co_sweet">
-                <div><p>Texture 口感 </p><p>绵软细腻</p></div>
-                <div><p>Base 口味基底</p><p>Whipping Cream</p></div>
-                <div><p>Sweetness 甜味</p><p>🍭🍭</p></div>
-                <div><p>Flavor 口味</p><p>芝士/奶油/酸乳</p></div>
+            <div class="co_sweet" v-for="item in sweets">
+                <div><p>{{item.sweetKey}}</p><p>{{item.sweetValue}}</p></div>
             </div>
         </div>
     </div>
@@ -138,12 +121,8 @@
     <div class="eat_one"><p >咬下一口，进入绿野仙踪的童话世界。安逸兔带你开启奇幻冒险之旅，陪你找到被遗失的童心。</p></div>
     <div class="eat_two"><p>Best Ingredient | 优质原材料</p>
                <p>法国奶油、甄选酸乳、新西兰芝士、胡萝卜粒</p></div>
-    <div class="eat_three">
-        <div><p>Texture | 口感</p><p>绵软细腻</p></div>
-        <div><p>Flavor | 口味</p><p>芝士、奶油、酸乳</p></div>
-        <div><p>Base | 口味基底</p><p>奶油</p></div>
-        <div><p>Sweetness | 甜味</p><p>🍭🍭</p></div>
-        <div><p>Size | 规格</p><p>1.5磅/2.5磅/3.5磅/5.5磅</p></div>
+    <div class="eat_three" v-for="item in sweets">
+        <div><p>{{item.sweetKey}}</p><p>{{item.sweetValue}}</p></div>
     </div>
 </div>
 <div class="eat_right"><img src="image/shop_goods-111.jpg" alt=""></div>
@@ -151,32 +130,16 @@
 <!--        中间漫画部分-->
         <div id="eat_Cartoon"><img src="image/shop_goods_Cartoon.jpg" alt=""></div>
         <div id="eat_taste"><img src="image/shop_goods-taste.jpg" alt=""></div>
-
-
 <!--蛋糕规格-->
 <div id="size">
     <div class="cake"><p>蛋糕规格</p></div>
     <div class="clearFloat">
-        <div>
-            <div><img src="image/size_1.jpg" alt=""></div>
-            <div><p>1.5磅</p>
-                <p>SIZE:16cm*5cm</p>
-                <p>适合2-3人食用</p></div></div>
-        <div>
-            <div><img src="image/size_2.jpg" alt=""></div>
-            <div><p>2.5磅</p>
-                <p>SIZE:21cm*5cm</p>
-                <p>适合4-7人食用</p></div></div>
-        <div>
-            <div><img src="image/size_3.jpg" alt=""></div>
-            <div><p>3.5磅</p>
-                <p>SIZE:26.5cm*5cm</p>
-                <p>适合8-12人食用</p></div></div>
-        <div>
-            <div><img src="image/size_4.jpg" alt=""></div>
-            <div><p>5.5磅</p>
-                <p>SIZE:32.5cm*5cm</p>
-                <p>适合12-20人食用</p></div></div>
+    <div class="cakeSize floatLeft" v-for="item in cakeSizes">
+            <div><img :src=item.src alt=""></div>
+            <div><p>{{item.pound}}</p>
+                <p>SIZE:{{item.size}}</p>
+                <p>适合{{item.people}}人食用</p></div>
+    </div>
     </div>
 </div>
 </div>
@@ -193,6 +156,7 @@
         <div><img src="image/shop_goods-5.jpg" alt=""><p>Croissant francais</p><p>1盒/48RMB</p></div>
     </div>
 </div>
+
 <footer id="footer">
     <div class="footer">
     <div><img src="image/shop_goods-11.jpg" alt=""></div>
@@ -200,5 +164,54 @@
     <div><img src="image/shop_goods-13.jpg" alt=""></div>
     </div>
 </footer>
+</div>
+<script>
+    var flags=[
+        {name:"法国奶油",src:"image/flag_France.jpg"},
+        {name:"甄选酸乳",src:"image/flag_China.jpg"},
+        {name:"新西兰芝士",src:"image/flag_NewZealand.jpg"},
+        {name:"胡萝卜粒",src:"image/flag_rabbit.jpg"},
+    ];
+    var sweets=[
+        {sweetKey:"Texture | 口感",sweetValue:"绵软细腻"},
+        {sweetKey:"Flavor | 口味",sweetValue:"芝士、奶油、酸乳"},
+        {sweetKey:"Base | 口味基底",sweetValue:"奶油"},
+        {sweetKey:"Sweetness | 甜味",sweetValue:"🍭🍭"},
+        {sweetKey:"Size | 规格",sweetValue:"1.5磅/2.5磅/3.5磅/5.5磅"},
+    ];
+    var cakeSizes=[
+        {src:"image/size_1.jpg",pound:"1.5磅",size:"16cm*5cm",people:"2-3"},
+        {src:"image/size_2.jpg",pound:"2.5磅",size:"21cm*5cm",people:"4-7"},
+        {src:"image/size_3.jpg",pound:"3.5磅",size:"26.5cm*5cm",people:"8-12"},
+        {src:"image/size_4.jpg",pound:"5.5磅",size:"32.5cm*5cm",people:"12-20"},
+    ];
+    var centerImgs=[
+        {index:0,src:"image/shop_goods-1.jpg"},
+        {index:1,src:"image/shop_goods-2.jpg" },
+        {idnex:2,src:"image/shop_goods-4.jpg"}];
+    var navTitles=[
+        {pTitleEnglish:"Nos Products",pTitleChinese:"全部产品"},
+        {pTitleEnglish:"Napoleon",pTitleChinese:"拿破仑产品"},
+        {pTitleEnglish:"Evenements",pTitleChinese:"热门活动"},
+        {pTitleEnglish:"Mon M'CAKE",pTitleChinese:"会员中心"}];
+    var pounds=[
+        {weight:"1.5磅"},
+        {weight:"2.5磅"},
+        {weight:"3.5磅"},
+        {weight:"5.5磅"}];
+    var vm=new Vue({
+        el:"#app",
+        data(){
+            return {
+                navTitles:navTitles,
+                pounds:pounds,
+                centerImgs:centerImgs,
+                cakeSizes:cakeSizes,
+                sweets:sweets,
+                flags:flags
+            }
+        }
+    })
+</script>
 </body>
 </html>
