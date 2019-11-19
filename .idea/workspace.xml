@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0345bca4-8689-4c27-8798-972a5e666e18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/foods.css" beforeDir="false" afterPath="$PROJECT_DIR$/foods.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foods.html" beforeDir="false" afterPath="$PROJECT_DIR$/foods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TVuLgubsSa1XgROjDk3gI16hfe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -52,6 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573557529195</updated>
       <workItem from="1573557530666" duration="7808000" />
+      <workItem from="1574143299264" duration="1436000" />
     </task>
     <servers />
   </component>
@@ -63,7 +63,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

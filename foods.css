@@ -360,12 +360,14 @@ input[type="number"]{
 }
 #footer div{
     float: left;
-    width: 350px;
+    width: 400px;
     margin:0 auto;
 }
 #footer div img{
     margin:0 auto;
     width: 300px;
+    margin-left: 80px;
+    margin-top: 30px;
 }
 
 
